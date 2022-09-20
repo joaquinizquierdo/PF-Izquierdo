@@ -1,0 +1,215 @@
+* {
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+/* Fuentes */
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: "NotoSans";
+    src: url(../fonts/NotoSans-Regular.ttf);
+}
+/* Fondo del menú */
+header {
+    background-color: #242222;
+    padding: 7px;
+    margin-bottom: 10px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+    main {
+        width: 90%;
+        max-width: 1200px;
+    }
+/* Imagen del menú */
+.logo {
+    width: 15%;
+    padding: 5px;
+}
+/* Lista del menú */
+.menu {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+}
+.lista {
+    list-style-type: disc;
+    margin: 5px 30px 5px px;
+    text-align: justify;
+}
+.bordes {
+    background-color: #807B7B;
+    width: 40%;
+    border: solid 2px black;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Títulos, subtítulos y textos */
+h1 {
+    font-family: "Lato";
+    font-weight: bold;
+    font-size: 3em;
+    color: #1630BE;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+h2 {
+    font-family: "Lato";
+    font-weight: bold;
+    font-size: 2em;
+    padding: 10px;
+    margin: 10px;
+}
+h3, p, li {
+    font-family: "NotoSans";
+    font-size: 1em;
+    padding: 5px;
+    margin: 5px;
+    line-height: 1.6;
+}
+p {
+    text-align: justify;
+}
+/* Footer */
+footer {
+    margin-top: 3em;
+}
+footer nav{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-top: solid 2px black;
+}
+footer p {
+    text-align: center;
+}
+#formulario {
+    font-family: "NotoSans";
+    font-size: 2em;
+}
+form div label {
+    display: block;
+    margin-top: 7px;
+}
+form div input {
+    width: 40em;
+}
+form div textarea {
+    width: 40em;
+}
+/* Galería del carrusel */
+.galeria {
+    width: 60%;
+    padding: 10px;
+    margin: 10px;
+}
+/* Fotos */
+.fotosPlanes {
+    width: 40%;
+    padding: 5px;
+    margin: 5px;
+}
+.fotosAsesorias {
+    width: 50%;
+    padding: 10px;
+    margin: 5px;
+}
+.fotoContacto {
+    width: 100%;
+    height: 100%;
+}
+.fotoCentrada {
+    display: flex;
+    justify-content: space-around;
+}
+/* Icono de wpp fijo */
+.wpp {
+    background-color: #242222;
+    color: #1630BE;
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    position: fixed;
+    bottom: 1em;
+    right: 2em;
+    display: flex;
+    align-items: center;
+}
+header nav {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 3px black;
+}
+header nav ul {
+    display: flex;
+    flex-direction: row;
+}
+.sedes{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 33em;
+    grid-column-gap: 15px;
+}
+.planes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.metodosPago {
+    height: 15em;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+.listaCentrada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Grid area contacto */
+#grillaContacto {
+    display: grid;
+    grid-template-areas: 
+        "img nombre"
+        "img apellido"
+        "img correo"
+        "img telefono"
+        "img consulta"
+        "img enviar";
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr 2fr;
+}
+img#fotoContacto {
+    grid-area: img;
+}
+#gridNombre {
+    grid-area: nombre;
+}
+#gridApellido {
+    grid-area: apellido;
+}
+#gridCorreo {
+    grid-area: correo;
+}
+#gridTelefono {
+    grid-area: telefono;
+}
+#gridConsulta {
+    grid-area: consulta;
+}
+#gridEnviar {
+    grid-area: enviar;
+}
