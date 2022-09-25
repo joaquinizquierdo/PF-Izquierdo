@@ -12,23 +12,23 @@
     src: url(../fonts/NotoSans-Regular.ttf);
 }
 /* Fondo del menú */
-header {
+/* header {
     background-color: #242222;
     padding: 7px;
     margin-bottom: 10px;
     width: 100%;
     position: sticky;
     top: 0;
-}
+} */
     main {
         width: 90%;
         max-width: 1200px;
     }
 /* Imagen del menú */
-.logo {
+/* .logo {
     width: 15%;
     padding: 5px;
-}
+} */
 /* Lista del menú */
 .menu {
     text-decoration: none;
@@ -79,9 +79,6 @@ p {
     text-align: justify;
 }
 /* Footer */
-footer {
-    margin-top: 3em;
-}
 footer nav{
     width: 90%;
     display: flex;
@@ -133,7 +130,7 @@ form div textarea {
     justify-content: space-around;
 }
 /* Icono de wpp fijo */
-.wpp {
+/* .wpp {
     background-color: #242222;
     color: #1630BE;
     border-radius: 50%;
@@ -144,25 +141,25 @@ form div textarea {
     right: 2em;
     display: flex;
     align-items: center;
-}
-header nav {
+} */
+/* header nav {
     width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     border-bottom: solid 3px black;
-}
-header nav ul {
+} */
+/* header nav ul {
     display: flex;
     flex-direction: row;
-}
-.sedes{
+} */
+/* .sedes{
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     grid-template-rows: 33em;
     grid-column-gap: 15px;
-}
+} */
 .planes {
     display: flex;
     flex-direction: row;
@@ -212,4 +209,86 @@ img#fotoContacto {
 }
 #gridEnviar {
     grid-area: enviar;
+}
+/* Media quaries */
+@media only screen and (max-width: 420px) {
+    header {
+        background-color: #242222;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .logo {
+        width: 75%;
+        padding: 5px;
+    }
+    .logoCentrado {
+        text-align: center;
+    }
+    .sedes{
+        display: block;
+        text-align: center;
+    }
+    .wpp {
+        background-color: #242222;
+        color: #1630BE;
+        border-radius: 10px;
+        width: 90%;
+        height: 4em;
+        position: fixed;
+        bottom: 1em;
+        right: 1em;
+        left: 1em;
+        display: flex;
+        align-items: center;
+    }
+    footer {
+        margin-top: 3em;
+        margin-bottom: 5em;
+    }
+    footer p {
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 421px) and (max-width: 1199px) {
+    
+}
+@media only screen and (min-width: 1200px) {
+    header {
+        background-color: #242222;
+        padding: 7px;
+        margin-bottom: 10px;
+        width: 100%;
+        position: sticky;
+        top: 0;
+    }
+    header nav {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid 3px black;
+    }
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+    .logo {
+        width: 15%;
+        padding: 5px;
+    }
+    .sedes{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: 33em;
+        grid-column-gap: 15px;
+    }
+    footer {
+        margin-top: 3em;
+    }
 }
