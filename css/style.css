@@ -40,7 +40,7 @@
     margin: 5px 30px 5px px;
     text-align: justify;
 }
-.bordes {
+/* .bordes {
     background-color: #807B7B;
     width: 40%;
     border: solid 2px black;
@@ -50,7 +50,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
+} */
 /* Títulos, subtítulos y textos */
 h1 {
     font-family: "Lato";
@@ -94,16 +94,16 @@ footer p {
     font-family: "NotoSans";
     font-size: 2em;
 }
-form div label {
+/* form div label {
     display: block;
     margin-top: 7px;
-}
-form div input {
+} */
+/* form div input {
     width: 40em;
 }
 form div textarea {
     width: 40em;
-}
+} */
 /* Galería del carrusel */
 .galeria {
     width: 60%;
@@ -111,20 +111,20 @@ form div textarea {
     margin: 10px;
 }
 /* Fotos */
-.fotosPlanes {
+/* .fotosPlanes {
     width: 40%;
     padding: 5px;
     margin: 5px;
-}
+} */
 .fotosAsesorias {
     width: 50%;
     padding: 10px;
     margin: 5px;
 }
-.fotoContacto {
+/* .fotoContacto {
     width: 100%;
     height: 100%;
-}
+} */
 .fotoCentrada {
     display: flex;
     justify-content: space-around;
@@ -160,11 +160,11 @@ form div textarea {
     grid-template-rows: 33em;
     grid-column-gap: 15px;
 } */
-.planes {
+/* .planes {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-}
+} */
 .metodosPago {
     height: 15em;
     display: flex;
@@ -177,7 +177,7 @@ form div textarea {
     align-items: center;
 }
 /* Grid area contacto */
-#grillaContacto {
+/* #grillaContacto {
     display: grid;
     grid-template-areas: 
         "img nombre"
@@ -209,7 +209,7 @@ img#fotoContacto {
 }
 #gridEnviar {
     grid-area: enviar;
-}
+} */
 /* Media quaries */
 @media only screen and (max-width: 420px) {
     header {
@@ -226,7 +226,8 @@ img#fotoContacto {
         width: 75%;
         padding: 5px;
     }
-    .logoCentrado {
+    /* Logo centrado */
+    header nav div {
         text-align: center;
     }
     .sedes{
@@ -252,6 +253,78 @@ img#fotoContacto {
     }
     footer p {
         text-align: center;
+    }
+    .fotosPlanes {
+        display: none;
+    }
+    .planes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        background-color: #242222;
+    }
+    .bordes {
+        background-color: #807B7B;
+        width: 90%;
+        border: solid 2px black;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    /* Grid area contacto */
+    #grillaContacto {
+        display: grid;
+        grid-template-areas: 
+            "nombre"
+            "apellido"
+            "correo"
+            "telefono"
+            "consulta"
+            "enviar"
+            "img";
+        grid-template-rows: 100%;
+        grid-template-columns: 100%;
+        background-image: url(../assets/imagenes/mancuernas\ vertical.jpg);
+        background-size: cover;
+    }
+    img#fotoContacto {
+        grid-area: img;
+    }
+    #gridNombre {
+        grid-area: nombre;
+    }
+    #gridApellido {
+        grid-area: apellido;
+    }
+    #gridCorreo {
+        grid-area: correo;
+    }
+    #gridTelefono {
+        grid-area: telefono;
+    }
+    #gridConsulta {
+        grid-area: consulta;
+    }
+    #gridEnviar {
+        grid-area: enviar;
+    }
+    form div input {
+        width: 20em;
+    }
+    form div textarea {
+        width: 20em;
+    }
+    .fotoContacto {
+        display: none;
+    }
+    form div label {
+        display: block;
+        margin-top: 7px;
+        color: #1630BE;
     }
 }
 @media only screen and (min-width: 421px) and (max-width: 1199px) {
@@ -290,5 +363,86 @@ img#fotoContacto {
     }
     footer {
         margin-top: 3em;
+    }
+    .wpp {
+        background-color: #242222;
+        color: #1630BE;
+        border-radius: 50%;
+        width: 4em;
+        height: 4em;
+        position: fixed;
+        bottom: 1em;
+        right: 2em;
+        display: flex;
+        align-items: center;
+    }
+    .fotosPlanes {
+        width: 40%;
+        padding: 5px;
+        margin: 5px;
+    }
+    .planes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .bordes {
+        background-color: #807B7B;
+        width: 40%;
+        border: solid 2px black;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    /* Grid area contacto */
+    #grillaContacto {
+        display: grid;
+        grid-template-areas: 
+            "img nombre"
+            "img apellido"
+            "img correo"
+            "img telefono"
+            "img consulta"
+            "img enviar";
+        grid-template-rows: 100%;
+        grid-template-columns: 1fr 2fr;
+    }
+    img#fotoContacto {
+        grid-area: img;
+    }
+    #gridNombre {
+        grid-area: nombre;
+    }
+    #gridApellido {
+        grid-area: apellido;
+    }
+    #gridCorreo {
+        grid-area: correo;
+    }
+    #gridTelefono {
+        grid-area: telefono;
+    }
+    #gridConsulta {
+        grid-area: consulta;
+    }
+    #gridEnviar {
+        grid-area: enviar;
+    }
+    .fotoContacto {
+        width: 100%;
+        height: 100%;
+    }
+    form div input {
+        width: 40em;
+    }
+    form div textarea {
+        width: 40em;
+    }
+    form div label {
+        display: block;
+        margin-top: 7px;
     }
 }
