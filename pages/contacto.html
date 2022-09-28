@@ -28,8 +28,8 @@
     <main>
         <h1>CONTACTO</h1>
         <section id="grillaContacto">
-            <img src="../assets/imagenes/mancuernas vertical.jpg" alt="Mancuernas en rack" class="fotoContacto" id="fotoContacto">
-            <form action="" id="formulario">
+            <img src="../assets/imagenes/mancuernas vertical.jpg" alt="Mancuernas en rack" class="fotoContacto" id="fotoContacto" data-aos="zoom-in-right" data-aos-duration="1500">
+            <form action="" id="formulario" data-aos="zoom-in-left" data-aos-duration="1500">
                 <div id="gridNombre"><!-- Campo del nombre -->                  
                     <label for="nombre">Nombre</label>
                     <input type="text" id="nombre" name="nombre" placeholder="Joaquin">
@@ -83,5 +83,9 @@
         </nav>
         <p>Copyright</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

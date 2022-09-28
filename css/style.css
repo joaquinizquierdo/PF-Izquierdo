@@ -460,8 +460,6 @@ img#fotoContacto {
         padding: 7px;
         margin-bottom: 10px;
         width: 100%;
-        position: sticky;
-        top: 0;
     }
     header nav {
         width: 90%;
