@@ -1,0 +1,157 @@
+#formulario {
+    font-family: "NotoSans";
+    font-size: 2em;
+}
+@media only screen and (max-width: 420px) {
+    #grillaContacto {
+        display: grid;
+        grid-template-areas: 
+            "nombre"
+            "apellido"
+            "correo"
+            "telefono"
+            "consulta"
+            "enviar"
+            "img";
+        grid-template-rows: 100%;
+        grid-template-columns: 100%;
+        background-image: url(../assets/imagenes/mancuernas\ vertical.jpg);
+        background-size: cover;
+    }
+    img#fotoContacto {
+        grid-area: img;
+    }
+    #gridNombre {
+        grid-area: nombre;
+    }
+    #gridApellido {
+        grid-area: apellido;
+    }
+    #gridCorreo {
+        grid-area: correo;
+    }
+    #gridTelefono {
+        grid-area: telefono;
+    }
+    #gridConsulta {
+        grid-area: consulta;
+    }
+    #gridEnviar {
+        grid-area: enviar;
+    }
+    form div input {
+        width: 20em;
+    }
+    form div textarea {
+        width: 20em;
+    }
+    .fotoContacto {
+        display: none;
+    }
+    form div label {
+        display: block;
+        margin-top: 7px;
+        color: #1630BE;
+    }
+}
+@media only screen and (min-width: 421px) and (max-width: 1199px) {
+    #grillaContacto {
+        display: grid;
+        grid-template-areas: 
+            "nombre"
+            "apellido"
+            "correo"
+            "telefono"
+            "consulta"
+            "enviar"
+            "img";
+        grid-template-rows: 100%;
+        grid-template-columns: 100%;
+        background-image: url(../assets/imagenes/mancuernas\ vertical.jpg);
+        background-size: cover;
+    }
+    img#fotoContacto {
+        grid-area: img;
+    }
+    #gridNombre {
+        grid-area: nombre;
+    }
+    #gridApellido {
+        grid-area: apellido;
+    }
+    #gridCorreo {
+        grid-area: correo;
+    }
+    #gridTelefono {
+        grid-area: telefono;
+    }
+    #gridConsulta {
+        grid-area: consulta;
+    }
+    #gridEnviar {
+        grid-area: enviar;
+    }
+    form div input {
+        width: 20em;
+    }
+    form div textarea {
+        width: 20em;
+    }
+    .fotoContacto {
+        display: none;
+    }
+    form div label {
+        display: block;
+        margin-top: 7px;
+        color: #1630BE;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    #grillaContacto {
+        display: grid;
+        grid-template-areas: 
+            "img nombre"
+            "img apellido"
+            "img correo"
+            "img telefono"
+            "img consulta"
+            "img enviar";
+        grid-template-rows: 100%;
+        grid-template-columns: 1fr 2fr;
+    }
+    img#fotoContacto {
+        grid-area: img;
+    }
+    #gridNombre {
+        grid-area: nombre;
+    }
+    #gridApellido {
+        grid-area: apellido;
+    }
+    #gridCorreo {
+        grid-area: correo;
+    }
+    #gridTelefono {
+        grid-area: telefono;
+    }
+    #gridConsulta {
+        grid-area: consulta;
+    }
+    #gridEnviar {
+        grid-area: enviar;
+    }
+    .fotoContacto {
+        width: 100%;
+        height: 100%;
+    }
+    form div input {
+        width: 40em;
+    }
+    form div textarea {
+        width: 40em;
+    }
+    form div label {
+        display: block;
+        margin-top: 7px;
+    }
+}

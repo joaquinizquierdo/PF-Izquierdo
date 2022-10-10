@@ -1,0 +1,72 @@
+footer {
+    nav {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        border-top: solid 2px black;
+    }
+    p {
+        text-align: center;
+        font-size: 1.5em;
+    }
+    & nav a svg:hover {
+        fill: black;
+    }
+}
+@media screen and (max-width: 420px) {
+    footer {
+        margin-top: 3em;
+        margin-bottom: 5em;
+    }
+    .wpp {
+        background-color: #242222;
+        color: #1630BE;
+        border-radius: 10px;
+        width: 90%;
+        height: 4em;
+        position: fixed;
+        bottom: 1em;
+        right: 1em;
+        left: 1em;
+        display: flex;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 421px) and (max-width: 1199px) {
+    footer {
+        margin-top: 3em;
+        margin-bottom: 5em;
+    }
+    .wpp {
+        background-color: #242222;
+        color: #1630BE;
+        border-radius: 10px;
+        width: 90%;
+        height: 4em;
+        position: fixed;
+        bottom: 1em;
+        right: 1em;
+        left: 1em;
+        display: flex;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 1200px) {
+    footer {
+        margin-top: 3em;
+    }
+    .wpp {
+        background-color: #242222;
+        color: #1630BE;
+        border-radius: 50%;
+        width: 4em;
+        height: 4em;
+        position: fixed;
+        bottom: 1em;
+        right: 2em;
+        display: flex;
+        align-items: center;
+    }
+}

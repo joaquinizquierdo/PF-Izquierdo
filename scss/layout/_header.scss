@@ -1,0 +1,59 @@
+header {
+    background-color: $colorPrincipal;
+}
+@media screen and (max-width: 420px) {
+    header {
+        padding: 7px;
+        margin-bottom: 10px;
+        nav {
+            border-bottom: solid 2px black;
+        }
+        a {
+            text-align: center;
+            margin-left: 16px;
+        }
+        img {
+            width: 75%;
+        }
+        ul {
+            padding: 5px;
+        }
+    }
+}
+@media screen and (min-width: 421px) and (max-width: 1199px) {
+    header {
+        padding: 7px;
+        margin-bottom: 10px;
+        nav {
+            border-bottom: solid 2px black;
+        }
+        a {
+            text-align: center;
+            margin-left: 16px;
+        }
+        img {
+            width: 75%;
+        }
+        ul {
+            padding: 5px;
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    header {
+        padding: 7px;
+        margin-bottom: 10px;
+        nav {
+            border-bottom: solid 3px black;
+        }
+        img {
+            width: 15%;
+        }
+        ul {
+            padding: 5px;
+        }
+        & nav ul li:hover {
+            font-size: 1.04em;
+        }
+    }
+}

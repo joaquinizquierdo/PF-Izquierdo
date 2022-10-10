@@ -13,16 +13,29 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div> <!-- Logo + nombre -->
-                <a href="../index.html"><img src="../assets/imagenes/logo principal.png" alt="Casco espartano" class="logo"></a>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid w-75">
+                <a class="navbar-brand" href="../index.html"><img src="../assets/imagenes/logoPrincipal.png" alt="Casco espartano" class="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./planes.html">Planes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./asesorias.html">Asesorias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./informacion.html">Información</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <ul class="menu">
-                <li><a href="./planes.html">Planes</a></li>
-                <li><a href="./asesorias.html">Asesorías</a></li>
-                <li><a href="./informacion.html">Información</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
         </nav>
     </header>
     <main>

@@ -1,0 +1,80 @@
+.metodosPago {
+    height: 15em;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+.listaCentrada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width: 420px) {
+    .fotosPlanes {
+        display: none;
+    }
+    .planes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        background-color: #242222;
+    }
+    .bordes {
+        background-color: #807B7B;
+        width: 90%;
+        border: solid 2px black;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@media only screen and (min-width: 421px) and (max-width: 1199px) {
+    .fotosPlanes {
+        display: none;
+    }
+    .planes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        background-color: #242222;
+    }
+    .bordes {
+        background-color: #807B7B;
+        width: 90%;
+        border: solid 2px black;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .fotosPlanes {
+        width: 40%;
+        padding: 5px;
+        margin: 5px;
+    }
+    .planes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .bordes {
+        background-color: #807B7B;
+        width: 40%;
+        border: solid 2px black;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
