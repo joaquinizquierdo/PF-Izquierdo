@@ -108,6 +108,7 @@ header {
 
 @media screen and (max-width: 420px) {
   .sedes {
+    width: 90%;
     display: block;
     text-align: center;
   }
@@ -117,6 +118,7 @@ header {
 }
 @media screen and (min-width: 421px) and (max-width: 1199px) {
   .sedes {
+    width: 90%;
     display: block;
     text-align: center;
   }
