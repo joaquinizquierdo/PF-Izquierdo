@@ -3,7 +3,13 @@
     width: 25px;
 }
 @media screen and (max-width: 420px) {
-
+    .sedes{
+        display: block;
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+    }
 }
 @media screen and (min-width: 421px) and (max-width: 1199px) {
     .sedes {
@@ -18,5 +24,11 @@
     main {
         width: 90%;
         max-width: 1200px;
+    }
+    .sedes{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: 33em;
+        grid-column-gap: 15px;
     }
 }

@@ -106,6 +106,15 @@ header {
   width: 25px;
 }
 
+@media screen and (max-width: 420px) {
+  .sedes {
+    display: block;
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
+}
 @media screen and (min-width: 421px) and (max-width: 1199px) {
   .sedes {
     display: block;
@@ -120,24 +129,13 @@ header {
     width: 90%;
     max-width: 1200px;
   }
+  .sedes {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 33em;
+    grid-column-gap: 15px;
+  }
 }
-.lista {
-  list-style-type: disc;
-  margin: 5px 30px 5px px;
-  text-align: justify;
-}
-
-.fotoCentrada {
-  display: flex;
-  justify-content: space-around;
-}
-
-.fotosAsesorias {
-  width: 50%;
-  padding: 10px;
-  margin: 5px;
-}
-
 .metodosPago {
   height: 15em;
   display: flex;
@@ -226,6 +224,23 @@ header {
   text-align: justify;
 }
 
+.fotoCentrada {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fotosAsesorias {
+  width: 50%;
+  padding: 10px;
+  margin: 5px;
+}
+
+.lista {
+  list-style-type: disc;
+  margin: 5px 30px 5px px;
+  text-align: justify;
+}
+
 #formulario {
   font-family: "NotoSans";
   font-size: 2em;
@@ -262,10 +277,10 @@ header {
     grid-area: enviar;
   }
   form div input {
-    width: 20em;
+    width: 10em;
   }
   form div textarea {
-    width: 20em;
+    width: 10em;
   }
   .fotoContacto {
     display: none;
@@ -354,10 +369,11 @@ header {
     height: 100%;
   }
   form div input {
-    width: 40em;
+    width: 100%;
   }
   form div textarea {
-    width: 40em;
+    width: 100%;
+    height: 7em;
   }
   form div label {
     display: block;
